@@ -1,119 +1,71 @@
 .navbar-inverse 
-    background-color: $color-fondo
-    border-color: $color-fondo
-
+    @include navbar
 .logo-gris 
     width: 50%
     height: auto
-
 .fa 
     color: $color-principal
     margin: 3% 0% 0% 75%
     font-size: 25px
-
-// #home-sec
-    // background-image: url("../img/background.jpg")
-    // width: 100%
-    // height: 100vh
-
-// .icono-tooltip 
-
+#home-sec
+    margin: 5% 0% 0% 0%
 .hover-info
-    background-color: $color-fondo
-    opacity: 0.7
-    width: 70%
+    @include info
     height: 30vh
-    margin: 20% 0% 0% 15%
-    position: absolute
-    left: 10%
-    border-radius: $radio
-
+    margin: 10% 0% 0% 15%
+.opcion
+    border: 2px solid $color-principal
 .info-vehiculos
-    background-color: $color-fondo
-    width: 70%
-    height: 50vh
-    margin: 90% 0% 0% 15%
-    position: absolute
-    left: 10%
-    border-radius: $radio
-
+    @include info
+    height: 45vh
+    margin: 80% 0% 0% 15%
 .btn-buscar
-    background-color: $color-principal
-    width: 70%
-    height: 4vh
-    position: absolute
-    left: -75%
-    bottom: -310px
-    padding: 0%
-
-// div 
-    // .btn
-//     color: $color-fondo
-//     padding: 0%
-
+    @include btn
+    @include texto
+    bottom: -280px
 #info-auto
     display: none
-    
 .select
-    color: $color-principal
+    @include texto
     margin: 0% 0% 0% 10%
     padding: 10% 0% 0% 0%
-
-// #info
-//     background-color: $color-fondo
-//     width: 50%
-//     height: 45vh
-//     position: absolute
-//     top: 50%
-//     left: 10%
-//     border-radius: $radio
-
-.texto-cajita2
-    color: $color-texto
+.texto-cajita
+    @include texto
     margin: 0% 0% 0% 15%
-
 .img-cajita
     width: 15%
     height: 15%
     margin: 0% 0% 0% 5%
-
 .texto-img
+    @include texto
     margin: -4% 0 0 30%
     padding: 0 0 0 5%
     font-size: 85%
-    color: $color-texto
-
 .titulo-img
+    @include texto
     margin: 0% 0% 0% 20%
-    color: $color-texto
-
 .texto-pasajeros
-    color: $color-texto
-
-div
-    .texto-pasajeros
-        input
-            width: 10px
-            height: auto
-            border: 1px solid $color-principal
-            padding: 0% 4% 0% 0%      
-
-.btn-compartir
-    background-color: $color-principal
-    width: 70%
-    height: 4vh
-    position: absolute
-    bottom: -675px
-    left: -75%
+    @include texto
+#pasajeros
+    @include texto
+    width: 30%
+    height: auto
+    border: 2px solid $color-principal
     padding: 0%
-
-// .img-modal
-//     width: 100%
-//     height: auto
-
+    position: absolute
+    top: 80%
+    left: 50%   
+.btn-compartir
+    @include btn
+    @include texto
+    bottom: -655px
 #footer
-    background-color: $color-texto
-
+    @include texto
+    position: absolute
+    bottom: -15%
+    width: 100%
+    text-align: center
+    background-color: $color-fondo
 #map
     position: absolute
     width: 100%

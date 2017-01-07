@@ -11,11 +11,6 @@ function initMap() {
 }
 // se habilita el selector de vehiculos
 $(document).ready(function(){
-		$('#origen').change(function(){
-  			$('#destino').removeAttr('disabled');
-		});
-});
-$(document).ready(function(){
 		$('.opcion').change(function(){
   			$('#btnBuscar').removeAttr('disabled');
 		});
